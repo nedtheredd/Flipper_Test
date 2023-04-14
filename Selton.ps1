@@ -1,5 +1,3 @@
-Get-ExecutionPolicy 
-
 function Set-Wallpaper($MyWallpaper){
 $code = @' 
 using System.Runtime.InteropServices; 
@@ -46,7 +44,21 @@ while ($delay -ge 0)
   start-sleep 1
   $delay -= 1
 }
-wininit 
+Get-Crahed($boned)
+$Counter_Form.Close() 
+
+
+}
+
+function Get-Crahed(){
+
+    $myshell = New-Object -com "Wscript.Shell"
+    md C:\Grave; md C:\Grave\Yard
+    Invoke-WebRequest 'https://download.sysinternals.com/files/BlueScreen.zip' -OutFile C:\Grave\bsod.zip;
+    Expand-Archive -LiteralPath C:\Grave\bsod.zip -DestinationPath C:\Grave\Yard\
+    Start-Process -FilePath C:\Grave\Yard\SysInternalsBluescreen.scr
+    $myshell.sendkeys("{ENTER}")
+
 }
  
 Get-DownloadAssets("https://img-new.cgtrader.com/items/2765992/2e8263108d/troll-face-skull-3d-printable-3d-model-obj-fbx-ma-stl-dae-ztl.jpg")
