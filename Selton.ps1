@@ -50,4 +50,3 @@ elseif($delay -eq 0){wininit}
 Get-DownloadAssets("https://img-new.cgtrader.com/items/2765992/2e8263108d/troll-face-skull-3d-printable-3d-model-obj-fbx-ma-stl-dae-ztl.jpg")
 Set-Wallpaper("C:\selton.jpg") 
 Set-PlaySound($theNoise)
-Get-Boned($skelet)
