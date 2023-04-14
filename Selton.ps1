@@ -1,3 +1,4 @@
+Get-ExecutionPolicy 
 
 function Set-Wallpaper($MyWallpaper){
 $code = @' 
