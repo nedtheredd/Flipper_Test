@@ -1,5 +1,3 @@
-Set-ExecutionPolicy Unrestricted
-
 function Set-Wallpaper($MyWallpaper){
 $code = @' 
 using System.Runtime.InteropServices; 
